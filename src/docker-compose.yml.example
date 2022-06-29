@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  webfinger:
+    build: .
+    container_name: webfinger
+    tty: true
+    restart: always
+    environment:
+      - VIRTUAL_HOST=example.com
+      - LETSENCRYPT_HOST=example.com
+      - LETSENCRYPT_EMAIL=admin@example.com
+    volumes:
+      - ./app:/code/app
+    
+networks:
+  default:
+    external:
+      name: nginx-proxy
