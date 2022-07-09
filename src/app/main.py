@@ -124,7 +124,7 @@ async def webfinger(request: Request, resource: str):
     },
     {
       "href": SERVER_URL + "/group/aaa",
-      "rel": "self",
+      "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html"
     },
     {
