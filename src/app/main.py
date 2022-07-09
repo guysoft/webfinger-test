@@ -42,7 +42,7 @@ async def group_page(request: Request, id: str):
     }
   ],
   "id": SERVER_URL + "/group/aaa",
-  "type": "Forum",
+  "type": "Person",
   "following": SERVER_URL + "/group/aaa/following",
   "followers": SERVER_URL + "/group/aaa/followers",
   "inbox": SERVER_URL + "/group/aaa/inbox",
